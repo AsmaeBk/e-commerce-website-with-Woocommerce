@@ -27,7 +27,7 @@ $woocommerce = new Client(
 //echo '</pre>';
 
 
-//Mise à jour d'un produit :
+////Mise à jour d'un produit :
 //$data = [
 //    'regular_price' => '12000.54'
 //];
@@ -36,6 +36,7 @@ $woocommerce = new Client(
 //echo '<pre>';
 //print_r($product);
 //echo '</pre>';
+
 //
 //print_r($woocommerce->get('products/categories'));
 //die;
