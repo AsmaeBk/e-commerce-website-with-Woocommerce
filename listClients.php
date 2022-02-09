@@ -39,7 +39,7 @@ $data = json_decode($data, true);
             <tr>
                 <th>No</th>
                 <th>Id</th>
-
+                <th>Nom d'utilisateur</th>
                 <th>Nom</th>
                 <th>Prenom</th>
                 <th>Email</th>
@@ -57,6 +57,7 @@ $data = json_decode($data, true);
                     <td><?= $i; ?></td>
 
                     <td><?= $row['id']; ?></td>
+                    <td>     <?= $row['username']; ?>
                     <td>     <?= $row['last_name']; ?>
 
                     </td>
@@ -66,8 +67,8 @@ $data = json_decode($data, true);
                     <td><?= $row['role']; ?></td>
                     <td><?= $row['date_created']; ?></td>
 
-                    <td><a class="btn btn-info" href="detailsClient.php?id=<?= $row['id']?>&&last_name=<?= $row['last_name']?>&&first_name=<?= $row['first_name']?>&&email=<?= $row['email']?>&&role=<?= $row['role']?>&&date_created=<?= $row['date_created']?>">Voir</a>
-                        <a class="btn btn-dark" href="editClient.php?id=<?= $row['id']?>&&last_name=<?= $row['last_name']?>&&first_name=<?= $row['first_name']?>&&email=<?= $row['email']?>&&role=<?= $row['role']?>&&date_created=<?= $row['date_created']?>">Modifier</a>
+                    <td><a class="btn btn-info" href="detailsClient.php?id=<?= $row['id']?>&&last_name=<?= $row['last_name']?>&&first_name=<?= $row['first_name']?>&&email=<?= $row['email']?>&&role=<?= $row['role']?>&&date_created=<?= $row['date_created']?>&&username=<?= $row['username']?>">Voir</a>
+                        <a class="btn btn-dark" href="editClient.php?id=<?= $row['id']?>&&last_name=<?= $row['last_name']?>&&first_name=<?= $row['first_name']?>&&email=<?= $row['email']?>&&role=<?= $row['role']?>&&date_created=<?= $row['date_created']?>&&username=<?= $row['username']?>">Modifier</a>
                         <a class="btn btn-danger" href="DeleteClient.php?id=<?= $row['id']?>">Supprimer</a></td>             </tr>
 
                 <?php $i++; ?>
